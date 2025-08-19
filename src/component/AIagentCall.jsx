@@ -1,18 +1,17 @@
 import React from "react";
-
+import { CiPhone } from "react-icons/ci";
 const ConnectAgentForm = ({
   onSubmit,
-  buttonText = "Start Call",
-  title = "Connect to AI Agent",
   description = "Provide your details to start the conversation (all fields are optional)",
 }) => {
   return (
       <div style={styles.card}>
-        
-      <div style={styles.icon}>📞</div>
+      <div style={styles.icon}><CiPhone /></div>
 
-        {/* Title & Description */}
-        <h2 style={styles.title}>{title}</h2>
+        <h2 style={styles.title}>
+  Connect to <span style={{ color: "#ff6b4a", fontWeight: "700" }}>Vaarti</span>
+</h2>
+
         <p style={styles.description}>{description}</p>
 
         {/* Form */}
@@ -20,7 +19,7 @@ const ConnectAgentForm = ({
           <input type="text" placeholder="Your name (optional)" style={styles.input} />
           <input type="email" placeholder="Your email (optional)" style={styles.input} />
           <input type="tel" placeholder="Your phone number (optional)" style={styles.input} />
-          <button type="submit" style={styles.button}>{buttonText}</button>
+          <button type="submit" style={styles.button}>Start Call</button>
         </form>
 
         {/* Note */}
@@ -33,14 +32,6 @@ const ConnectAgentForm = ({
 };
 
 const styles = {
-  // container: {
-  //   fontFamily: "Agrandir Grand",
-  //   display: "flex",
-  //   justifyContent: "center",
-  //   alignItems: "center",
-  //   background: "#f9fafb",
-  //   padding: "20px",
-  // },
   card: {
     background: "#fff",
     padding: "24px",
@@ -53,11 +44,9 @@ const styles = {
   icon: {
     background: "#ff6b4a",
     color: "#fff",
-    fontSize: "28px",
     padding: "14px",
     borderRadius: "50%",
     display: "inline-block",
-    marginBottom: "16px",
   },
   title: {
     fontSize: "20px",
