@@ -6,3 +6,194 @@
 body {
     font-family: 'Agrandir Grand';
 }
+/* header */
+        .header {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          padding: 12px 20px;
+          background-color: transeperent;
+          color: white;
+        }
+
+        .logo img {
+          height: 40px;
+          width: auto;
+        }
+
+/* centerBox */
+.center-box {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          height: auto;
+          min-height: calc(100vh - 64px);
+          text-align: center;
+          background: #fff;
+          font-family: Arial, sans-serif;
+          padding: 20px;
+        }
+
+        .center-box h1 {
+          font-size: 3rem;
+          font-weight: bold;
+          color: #ff6b4a;
+          margin-bottom: 10px;
+        }
+
+        .center-box p {
+          font-size: 1.5rem;
+          color: #ff6b4a;
+          margin-bottom: 20px;
+        }
+
+        .options {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          gap: 60px;
+          margin-bottom: 40px;
+          flex-wrap: wrap;
+        }
+        .options.mobile {
+          margin-top: 20px;
+        }
+
+        .option {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          gap: 10px;
+          cursor: pointer;
+          transition: 0.3s;
+        }
+
+        .circle {
+          width: 120px;
+          height: 120px;
+          border-radius: 50%;
+          background: #ff6b4a;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          transition: 0.3s;
+        }
+
+        .circle img {
+          width: 60px;
+          height: 60px;
+          filter: brightness(0) invert(1);
+        }
+
+        .option span {
+          font-size: 14px;
+          font-weight: bold;
+          color: #000;
+        }
+
+        .option .circle:hover {
+          background: #7d460b;
+        }
+
+        .option.active .circle {
+          background: #7d460b;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+          .center-box h1 {
+            font-size: 2rem;
+          }
+          .center-box p {
+            font-size: 1rem;
+          }
+          .options {
+            flex-direction: row;
+            gap: 30px;
+          }
+          .circle {
+            width: 80px;
+            height: 80px;
+          }
+          .circle img {
+            width: 40px;
+            height: 40px;
+          }
+        }
+
+
+/* AgentForm */
+.agent-card {
+  background: #fff;
+  padding: 24px;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  max-width: 380px;
+  width: 100%;
+  text-align: center;
+}
+
+.agent-icon {
+  background: #ff6b4a;
+  color: #fff;
+  font-size: 28px;
+  padding: 14px;
+  border-radius: 50%;
+  display: inline-block;
+  margin-bottom: 16px;
+}
+
+.agent-title {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+.agent-description {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.agent-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.agent-input {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 14px;
+  outline: none;
+}
+
+.agent-input:focus {
+  border-color: #ff6b4a;
+}
+
+.agent-button {
+  width: 100%;
+  padding: 12px;
+  background: #ff6b4a;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 500;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.agent-button:hover {
+  background: #ff8569;
+}
+
+.agent-note {
+  font-size: 12px;
+  color: #999;
+  margin-top: 12px;
+}

@@ -7,11 +7,9 @@ const ConnectAgentForm = ({
   description = "Provide your details to start the conversation (all fields are optional)",
 }) => {
   return (
-    // <div style={styles.container}>
       <div style={styles.card}>
         
-        {/* Icon */}
-        <div style={styles.icon}>📞</div>
+      <div style={styles.icon}>📞</div>
 
         {/* Title & Description */}
         <h2 style={styles.title}>{title}</h2>
